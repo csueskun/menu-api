@@ -14,6 +14,7 @@ $app = $router;
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+$app->post('artisan', 'ConfigurationController@artisan');
 /**
  * Routes for resource negocio
  */
