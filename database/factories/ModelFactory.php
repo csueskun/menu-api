@@ -17,3 +17,30 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'email' => $faker->email,
     ];
 });
+
+/**
+ * Factory definition for model App\Negocio.
+ */
+$factory->define(App\Negocio::class, function ($faker) {
+    return [
+        // Fields here
+    ];
+});
+
+/**
+ * Factory definition for model App\Negocio.
+ */
+$factory->define(App\Negocio::class, function ($faker) {
+    return [
+        // Fields here
+    ];
+});
+
+/**
+ * Factory definition for model App\Negocio.
+ */
+$factory->define(App\Negocio::class, function ($faker) {
+    return [
+        // Fields here
+    ];
+});
