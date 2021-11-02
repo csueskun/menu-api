@@ -44,3 +44,21 @@ $factory->define(App\Negocio::class, function ($faker) {
         // Fields here
     ];
 });
+
+/**
+ * Factory definition for model App\User.
+ */
+$factory->define(App\User::class, function ($faker) {
+    return [
+        // Fields here
+    ];
+});
+
+/**
+ * Factory definition for model App\User.
+ */
+$factory->define(App\User::class, function ($faker) {
+    return [
+        // Fields here
+    ];
+});

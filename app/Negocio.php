@@ -4,7 +4,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Negocio extends Model {
 
-    protected $fillable = ["nombre", "whatsapp"];
+    protected $fillable = ["nombre", "whatsapp", "logo"];
 
     protected $dates = [];
 

@@ -1,4 +1,5 @@
 <?php namespace App\Http\Controllers;
+use Tymon\JWTAuth\Facades\JWTAuth;
 
 class NegociosController extends Controller {
 
@@ -6,4 +7,8 @@ class NegociosController extends Controller {
 
     use RESTActions;
 
+    public function check(){
+        $payload = JWTAuth::parseToken()->getPayload();
+        return response()->json(['pl'=>$payload]);
+    }
 }
