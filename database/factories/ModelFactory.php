@@ -62,3 +62,129 @@ $factory->define(App\User::class, function ($faker) {
         // Fields here
     ];
 });
+
+/**
+ * Factory definition for model App\Producto.
+ */
+$factory->define(App\Producto::class, function ($faker) {
+    return [
+        // Fields here
+    ];
+});
+
+/**
+ * Factory definition for model App\ProductoTipo.
+ */
+$factory->define(App\ProductoTipo::class, function ($faker) {
+    return [
+        // Fields here
+    ];
+});
+
+/**
+ * Factory definition for model App\Producto.
+ */
+$factory->define(App\Producto::class, function ($faker) {
+    return [
+        'precio' => $faker->fillable,
+    ];
+});
+
+/**
+ * Factory definition for model App\Producto.
+ */
+$factory->define(App\Producto::class, function ($faker) {
+    return [
+        // Fields here
+    ];
+});
+
+/**
+ * Factory definition for model App\Producto.
+ */
+$factory->define(App\Producto::class, function ($faker) {
+    return [
+        // Fields here
+    ];
+});
+
+/**
+ * Factory definition for model App\ProductoTipo.
+ */
+$factory->define(App\ProductoTipo::class, function ($faker) {
+    return [
+        // Fields here
+    ];
+});
+
+/**
+ * Factory definition for model App\Producto.
+ */
+$factory->define(App\Producto::class, function ($faker) {
+    return [
+        // Fields here
+    ];
+});
+
+/**
+ * Factory definition for model App\ProductoTipo.
+ */
+$factory->define(App\ProductoTipo::class, function ($faker) {
+    return [
+        // Fields here
+    ];
+});
+
+/**
+ * Factory definition for model App\Producto.
+ */
+$factory->define(App\Producto::class, function ($faker) {
+    return [
+        // Fields here
+    ];
+});
+
+/**
+ * Factory definition for model App\ProductoTipo.
+ */
+$factory->define(App\ProductoTipo::class, function ($faker) {
+    return [
+        // Fields here
+    ];
+});
+
+/**
+ * Factory definition for model App\Producto.
+ */
+$factory->define(App\Producto::class, function ($faker) {
+    return [
+        // Fields here
+    ];
+});
+
+/**
+ * Factory definition for model App\Producto.
+ */
+$factory->define(App\Producto::class, function ($faker) {
+    return [
+        // Fields here
+    ];
+});
+
+/**
+ * Factory definition for model App\ProductoTipo.
+ */
+$factory->define(App\ProductoTipo::class, function ($faker) {
+    return [
+        // Fields here
+    ];
+});
+
+/**
+ * Factory definition for model App\Producto.
+ */
+$factory->define(App\Producto::class, function ($faker) {
+    return [
+        // Fields here
+    ];
+});

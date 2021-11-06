@@ -2,20 +2,21 @@
 
 use Illuminate\Database\Eloquent\Model;
 
-class Negocio extends Model {
+class ProductoTipo extends Model {
 
-    protected $fillable = ["nombre", "whatsapp", "logo", "sms", "recibe_whatsapp", "recibe_sms"];
+    protected $fillable = ["nombre", "icon", "active"];
 
     protected $dates = [];
 
     public static $rules = [
         "nombre" => "required",
+        "icon" => "required",
     ];
-    protected $table = 'negocios';
 
     public function productos()
     {
         return $this->hasMany("App\Producto");
     }
+
 
 }
