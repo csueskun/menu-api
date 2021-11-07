@@ -4,7 +4,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Producto extends Model {
 
-    protected $fillable = ["nombre", "precio", "producto_tipo_id", "negocio_id", "destacado", "active", "foto"];
+    protected $fillable = ["nombre", "descripcion", "precio", "producto_tipo_id", "negocio_id", "destacado", "active", "foto"];
 
     protected $dates = [];
 
