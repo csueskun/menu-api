@@ -17,7 +17,7 @@ trait OtherActions {
         $property = $request->get('property');
         $location = base_path().'/../'.$request->get('location');
         $extension = $file->getClientOriginalExtension();
-        $save_as = $property.'_'.$id.'.'.$extension;
+        $save_as = $property.'_'.$id.'_'.uniqid().'.'.$extension;
         $file->move($location, $save_as);
         if($file){
             $model->$property = $save_as;
