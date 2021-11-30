@@ -26,7 +26,7 @@ class NegociosController extends Controller {
     public function prepareNegocioMenu($id){
         $menu = [];
         $preparedTipos = [];
-        $tiposProductos = [];
+        $tiposProductos = ['star'=>[]];
         $productos = Producto::where('negocio_id', $id)->with('producto_tipo')->get()->toArray();
 
         for ($i=0; $i < count($productos); $i++) { 
@@ -39,6 +39,15 @@ class NegociosController extends Controller {
                 $tiposProductos['t'.$idTipo] = [];
             }
             $tiposProductos['t'.$idTipo][] = $producto;
+            if($producto['destacado']){
+                $tiposProductos['t0'][] = $producto;
+            }
+        }
+        if(count($tiposProductos['t0'])){
+            array_unshift($menu, [
+                'id'=>0, 'nombre'=>'Destacados', 'icon'=> 'star', 
+                'productos'=> $tiposProductos['star']
+            ]);
         }
         for ($i=0; $i < count($menu); $i++){
             $tipo = $menu[$i];
